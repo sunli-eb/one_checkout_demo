@@ -1,0 +1,121 @@
+@charset "UTF-8";
+/* ============== Browser Support ============== */
+/* ================== Colors ================== */
+/* ================ Typography ================= */
+/* ============ Heights and Widths ============= */
+/* ========== Responsive breakpoints =========== */
+/* ================= Elevations ================ */
+/* ================= Animations ================ */
+/* =================== Icons =================== */
+/* ============== Module specific ============== */
+/* ============== Accordion ============== */
+/* ============== Avatar ============== */
+/* ============== Button ============== */
+/* ============== Card ============== */
+/* ============== Event Cards ============== */
+/* ============== Form ============== */
+/* ============== Overlay ============== */
+/* ============== Reports ============== */
+/* ============== Responsive Form ============== */
+/* ============== Segmented Control ============== */
+/* ============== Ticket Types ============== */
+/* ============== Toggle / Switch ============== */
+/* ============== Browser Support ============== */
+/* ================== Colors ================== */
+/* ================ Typography ================= */
+/* ============ Heights and Widths ============= */
+/* ========== Responsive breakpoints =========== */
+/* ================= Elevations ================ */
+/* ================= Animations ================ */
+/* =================== Icons =================== */
+/* ============== Module specific ============== */
+/* ============== Accordion ============== */
+/* ============== Avatar ============== */
+/* ============== Button ============== */
+/* ============== Card ============== */
+/* ============== Event Cards ============== */
+/* ============== Form ============== */
+/* ============== Overlay ============== */
+/* ============== Reports ============== */
+/* ============== Responsive Form ============== */
+/* ============== Segmented Control ============== */
+/* ============== Ticket Types ============== */
+/* ============== Toggle / Switch ============== */
+/* ---------------------------------------------------------- */
+/*                                                            */
+/* A media query that captures:                               */
+/*                                                            */
+/* - Retina iOS devices                                       */
+/* - Retina Macs running Safari                               */
+/* - High DPI Windows PCs running IE 8 and above              */
+/* - Low DPI Windows PCs running IE, zoomed in                */
+/* - Low DPI Windows PCs and Macs running Firefox, zoomed in  */
+/* - Android hdpi devices and above                           */
+/* - Android tvdpi devices, including Google Nexus 7          */
+/* - Chrome running on high DPI Macs and PCs                  */
+/* - Opera running on high DPI Macs, PCs and mobile devices   */
+/*                                                            */
+/* Please note that that this code assumes you'll swap a      */
+/* 2× version of your images. If you'd like to supply         */
+/* finer increments, other thresholds might be appropriate.   */
+/*                                                            */
+/* A test for CSS pixel densites can be found here:           */
+/* http://bjango.com/articles/min-device-pixel-ratio/         */
+/*                                                            */
+/*                                  @marcedwards from @bjango */
+/*                                                            */
+/* ---------------------------------------------------------- */
+/* This is hacky and awesome. it should be part of mixins or something.
+   I found it once on stack overflow and couldn't find it later when I looked */
+/* XXX: test in browsers */
+/* ratio is the height divided by width in percentage form */
+/* This function is used to get the max height for multi-line ellipses
+ * We use px values for line-height in styleguide, and unitless values for line-height in core
+ * so we need to handle the possibility for both here
+ */
+.secondary-footer {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #282C35;
+  padding: 20px 0; }
+  .secondary-footer .secondary-footer__text,
+  .secondary-footer .secondary-footer__links {
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer; }
+    .secondary-footer .secondary-footer__text .secondary-footer__link:hover,
+    .secondary-footer .secondary-footer__links .secondary-footer__link:hover {
+      text-decoration: none;
+      color: white; }
+  .secondary-footer .secondary-footer__text a {
+    color: rgba(255, 255, 255, 0.92); }
+  .secondary-footer .secondary-footer__logo-wrapper {
+    margin-top: 10px; }
+  .secondary-footer .secondary-footer__logo {
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 35px; }
+    .secondary-footer .secondary-footer__logo .ico-eventbrite-badge {
+      font-size: 45px; }
+    .secondary-footer .secondary-footer__logo:hover {
+      text-decoration: none;
+      color: white; }
+  .secondary-footer .secondary-footer__links {
+    line-height: 22px; }
+    .secondary-footer .secondary-footer__links .secondary-footer__link {
+      color: rgba(255, 255, 255, 0.92);
+      padding: 0 10px; }
+    .secondary-footer .secondary-footer__links .first--link {
+      padding-left: 0; }
+
+@media only screen and (max-width: 479px) {
+  .secondary-footer {
+    padding: 20px 0 104px;
+    font-size: 12px; }
+    .secondary-footer .secondary-footer__logo-wrapper {
+      margin-top: 0; }
+    .secondary-footer .secondary-footer__logo {
+      line-height: 30px; }
+      .secondary-footer .secondary-footer__logo .ico-eventbrite-badge {
+        font-size: 25px; }
+    .secondary-footer .secondary-footer__links .secondary-footer__link {
+      padding: 0 6px; }
+    .secondary-footer .secondary-footer__links li:first-child {
+      display: block; } }
